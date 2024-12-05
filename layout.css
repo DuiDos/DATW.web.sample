@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+header,
+footer {
+  min-height: 10vh;
+  background-color: coral;
+}
+
+.section-wapper {
+  display: flex;
+}
+
+section {
+  height: 80vh;
+  width: 50%;
+  background-color: burlywood;
+}
+
+img {
+  float: left;
+}

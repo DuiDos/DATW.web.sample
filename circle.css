@@ -1,0 +1,24 @@
+.circle {
+    --circle-position: 200px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: red;
+    animation: circle 8s cubic-bezier(0.23, 1, 0.32, 1) 0 2 forwards both;
+}
+
+@keyframes circle {
+    25% {
+        transform: translate(var(--circle-position), 0px);
+    }
+    50% {
+        transform: translate(var(--circle-position), var(--circle-position));
+    }
+    75% {
+        transform: translate(0px, var(--circle-position));
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
